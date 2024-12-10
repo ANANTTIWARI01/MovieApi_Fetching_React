@@ -9,7 +9,7 @@ function BackImg() {
    const img_base_path="https://image.tmdb.org/t/p/original"
 
 async function back(){
-    const response = await axios.get(https://api.themoviedb.org/3/trending/movie/day?language=en-US&api_key=${API_KEY})
+    const response = await axios.get(`https://api.themoviedb.org/3/trending/movie/day?language=en-US&api_key=${API_KEY}`)
     setShowData(response.data.results)
     console.log(response.data.results);
 }
