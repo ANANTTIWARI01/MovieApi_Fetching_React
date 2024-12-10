@@ -28,7 +28,7 @@ useEffect(()=>{
     <div>
          
                 <div className="back" key={showdata.id}>
-                  <img src={img_base_path+showdata[getrandom].backdrop_path} alt="" />
+                  <img src={img_base_path+showdata[getrandom()].backdrop_path} alt="" />
                      
                  </div> 
 
